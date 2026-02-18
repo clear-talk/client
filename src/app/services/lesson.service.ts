@@ -51,7 +51,7 @@ export class LessonService {
   }
 
   putWordsToLesson(lessonId:number,words:WordGivenToPracticeDTO[]){
-    return this._http.put<void>(`/api/Lesson/${lessonId}putWordsForLesson`,words);
+    return this._http.put<void>(`/api/Lesson/${lessonId}/putWordsForLesson`,words);
   }
 
   postWordsToLesson(words:WordGivenToPracticeDTO[]){
